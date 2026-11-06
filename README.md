@@ -1,4 +1,4 @@
-# [Your site's title]
+# College-town home sales
 
 ## Start here (delete this section before you submit)
 
@@ -28,7 +28,7 @@ Don't edit any of the five dataset files. Your site needs only the CSV file. The
 
 ## What this site is for
 
-_Replace this line with your site's question and audience, or a short description of the site._
+This site will present completed home sales around 11 university campuses. The dataset contains 35,442 sales in 18 cities and towns across 11 states, collected in March 2026.
 
 ## Live site
 
@@ -36,7 +36,7 @@ https://your-username.github.io/your-repo-name/
 
 ## Data notes
 
-_Replace this line. Say which rows you left out and why, and how each figure on the site is defined. "Five things that will bite you" in the description sheet lists the problems to cover._
+Each row represents one completed sale. Values are reported by the collection source and were not verified against county records. `listing_id`, rather than street address, is the row key; street addresses can repeat for distinct units or sales. Dates may be missing, and days on market should be calculated as `contract_date - list_date` only where both dates are present—not as `sale_date - list_date`. Sale prices include implausible values, `home_type` is unreliable, and some property values are impossible (including zero living area). Missing values are empty in CSV and Excel, and `NULL` in SQLite, DuckDB, and Parquet. No site-specific analysis or figures have been created yet.
 
 ## Tools we used
 
